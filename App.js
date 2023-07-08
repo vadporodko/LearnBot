@@ -21,23 +21,23 @@ async function loadFonts() {
 
 loadFonts();
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  // const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => {
-      loadFonts().then(() => {
-        setIsLoading(false);
-      });
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     loadFonts().then(() => {
+  //       setIsLoading(false);
+  //     });
+  //   }, 2000);
+  // }, []);
 
-  if (isLoading) {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Image source={require('./assets/img/screensaver.png')} />
-      </View>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+  //       <Image source={require('./assets/img/screensaver.png')} />
+  //     </View>
+  //   );
+  // }
   return (
     <NavigationContainer>
       <Stack.Navigator>
